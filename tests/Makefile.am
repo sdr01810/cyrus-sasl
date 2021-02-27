@@ -42,7 +42,7 @@
 #
 ################################################################
 
-AM_CPPFLAGS=-I$(top_srcdir)/include -DPLUGINDIR='"${top_srcdir}/plugins/.libs"'
+AM_CPPFLAGS=-I$(top_srcdir)/include -I$(top_builddir)/include -DPLUGINDIR='"${top_srcdir}/plugins/.libs"'
 
 COMMON_LDADD = ../lib/libsasl2.la $(GSSAPIBASE_LIBS) $(GSSAPI_LIBS) $(LIB_SOCKET)
 
